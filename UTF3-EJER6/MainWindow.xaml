@@ -1,0 +1,45 @@
+﻿<Window
+    x:Class="UTF3_EJER6.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:UTF3_EJER6"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="La oreja de Van Gogh"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d" Icon="ear_human_body_icon_143215.ico">
+    <DockPanel Background="PaleVioletRed">
+        <TextBlock
+            DockPanel.Dock="Top"
+            FontFamily="Sans"
+            FontSize="50"
+            Text="Las 4 estaciones"
+            TextAlignment="Center">
+            <TextBlock.Foreground>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0.003" Color="#FF989FD6" />
+                    <GradientStop Offset="1" Color="#FF999754" />
+                    <GradientStop Offset="0.501" Color="#FFFBB725" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+            <UIElement.Effect>
+                <DropShadowEffect />
+            </UIElement.Effect>
+        </TextBlock>
+        <UniformGrid>
+            <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <Image Source="invierno.jpg" Stretch="None" />
+            </ScrollViewer>
+            <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <Image Source="primavera.jpg" Stretch="None" />
+            </ScrollViewer>
+            <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <Image Source="verano.jpg" Stretch="None" />
+            </ScrollViewer>
+            <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <Image Source="otoño.jpg" Stretch="None" />
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
+</Window>
